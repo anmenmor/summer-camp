@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <title>Coconut Summer Camp</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="all"/>
+    <meta name="keywords" content="campamento, verano"/>
+    <meta name="description" content="campamento de verano"/>
+    <meta name="revisit-after" content="20 days"/>
+    <meta name="author" content="Andrea Menéndez"/>
     <link rel="stylesheet" type="text/css" href="mystyle.css" />
   </head>
   <body>
@@ -25,7 +32,7 @@
       </svg>
     </header>
     <nav>
-      <a href="about-es.html">Sobre nosotros</>
+      <a href="about-es.html">Sobre nosotros</a>
       <a href="activities-es.html">Actividades</a>
       <a href="prices-es.html">Precios</a>
       <a href="location-es.html">Ubicación e instalaciones</a>
@@ -34,15 +41,40 @@
     <section>
       <h1>Contacta con nosotros</h1>
       <p>Si quieres inscribir a tu hijo, rellena el siguiente formulario:</p>
+      <form action="" method="">
+        <fieldset>
+          <legend>Datos personales del niño</legend>
+          <label>Nombre:<br/>
+          <input type="text" name="Nombre" required/></label><br/>
+          <label>Apellido:<br/>
+          <input type="text" name="Apellido" required/></label><br/>
+          <label>Fecha de nacimiento:<br/>
+          <input type="date" name="Fecha de nacimiento" required/></label>
+        </fieldset>
+        <fieldset>
+          <legend>Información adicional</legend>
+          <label>Correo electrónico:<br/>
+          <input type="text" name="email" required/></label>
+          <p>Selecciona las fechas de reserva:</p>
+          <input type="checkbox" name="fechas" value="fecha1"/>1 a 7 Julio<br/>
+          <input type="checkbox" name="fechas" value="fecha2"/>8 a 14 Julio<br/>
+          <input type="checkbox" name="fechas" value="fecha3"/>15 a 21 Julio<br/>
+          <input type="checkbox" name="fechas" value="fecha4"/>22 a 28 Julio<br/>
+          <input type="checkbox" name="fechas" value="fecha5"/>29 Julio a 4 Agosto<br/>
+          <input type="checkbox" name="fechas" value="fecha6"/>5 a 11 Agosto<br/>
+          <input type="checkbox" name="fechas" value="fecha7"/>12 a 18 Agosto<br/>
+          <input type="checkbox" name="fechas" value="fecha8"/>19 a 25 Agosto<br/>
+        </fieldset>
+        <p><input type="submit" value="Enviar"/> <input type="reset" value="Restablecer"/><p>
     </section>
+    <footer>
+      <div>
+       <p>
+          Campamento Coconut.<br /><br />Calle Princesa,18.<br />28045 Madrid
+          (Madrid).<br />Teléfono: 91 654 38 16.<br />Fax: 91 654 38 24.<br />Correo
+          electrónico: info@campamentococonut.es
+        </p>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div>
-      <p>
-        Campamento Coconut.<br /><br />Calle Princesa,18.<br />28045 Madrid
-        (Madrid).<br />Teléfono: 91 654 38 16.<br />Fax: 91 654 38 24.<br />Correo
-        electrónico: info@campamentococonut.es
-      </p>
-    </div>
-  </footer>
 </html>
