@@ -8,86 +8,121 @@
     <meta name="description" content="campamento de verano" />
     <meta name="revisit-after" content="20 days" />
     <meta name="author" content="Andrea Menéndez" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+    <script src="scripts/main.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body onload="foo()">
     <header>
-      <svg height="130" width="500">
-        <defs>
-          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop
-              offset="0%"
-              style="stop-color:rgba(0, 220, 202, 0.678);stop-opacity:1"
-            />
-            <stop
-              offset="100%"
-              style="stop-color:rgb(0, 110, 15);stop-opacity:1"
-            />
-          </linearGradient>
-        </defs>
-        <ellipse cx="140" cy="70" rx="130" ry="50" fill="url(#grad1)" />
-        <text fill="#ffffff" font-size="20" font-family="Verdana" x="50" y="80">
-          Campamento Coconut
-        </text>
-      </svg>
+      <div class="svg-center">
+        <svg class="foo">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop
+                offset="0%"
+                style="stop-color:rgba(0, 220, 202, 0.678);stop-opacity:1"
+              />
+              <stop
+                offset="100%"
+                style="stop-color:rgb(0, 110, 15);stop-opacity:1"
+              />
+            </linearGradient>
+          </defs>
+          <ellipse cx="140" cy="70" rx="130" ry="50" fill="url(#grad1)" />
+          <text
+            fill="#ffffff"
+            font-size="20"
+            font-family="Verdana"
+            x="50"
+            y="80"
+          >
+            Campamento Coconut
+          </text>
+        </svg>
+      </div>
+      <a href="index-en.html">Inglés</a>
+      <a href="index-es.html">Español</a>
     </header>
     <nav>
-      <ul>
-        <li><a class="menu" href="index-es.html">Inicio</a></li>
-        <li><a class="menu" href="about-es.html">Sobre nosotros</a></li>
-        <li><a class="menu" href="activities-es.html">Actividades</a></li>
-        <li><a class="menu" href="prices-es.html">Precios</a></li>
-        <li><a class="menu" href="location-es.html">Ubicación e instalaciones</a></li>
+      <ul class="back">
+        <li class="list"><a class="menu" href="index-es.html">Inicio</a></li>
+        <li class="list">
+          <a class="menu" href="about-es.html">Sobre nosotros</a>
+        </li>
+        <li class="list">
+          <a class="menu" href="activities-es.html">Actividades</a>
+        </li>
+        <li class="list">
+          <a class="menu" href="location-es.html">Ubicación</a>
+        </li>
+        <li class="list"><a class="menu" href="prices-es.html">Precio</a></li>
+        <li class="list">
+          <a class="menu" href="contact-es.html">Contáctanos</a>
+        </li>
       </ul>
     </nav>
     <section>
       <h1>Contacta con nosotros</h1>
       <p>Si quieres inscribir a tu hijo, rellena el siguiente formulario:</p>
       <p action="" method=""></p>
-      <fieldset>
-        <legend>Datos personales del niño</legend>
-        <label
-          >Nombre:<br />
-          <input type="text" name="Nombre" required/></label
-        ><br />
-        <label
-          >Apellido:<br />
-          <input type="text" name="Apellido" required/></label
-        ><br />
-        <label
-          >Fecha de nacimiento:<br />
-          <input type="date" name="Fecha de nacimiento" required
-        /></label>
-      </fieldset>
-      <fieldset>
-        <legend>Información adicional</legend>
-        <label
-          >Correo electrónico:<br />
-          <input type="text" name="email" required
-        /></label>
-        <p>Selecciona las fechas de reserva:</p>
-        <input type="checkbox" name="fechas" value="fecha1" />1 a 7 Julio<br />
-        <input type="checkbox" name="fechas" value="fecha2" />8 a 14 Julio<br />
-        <input type="checkbox" name="fechas" value="fecha3" />15 a 21 Julio<br />
-        <input type="checkbox" name="fechas" value="fecha4" />22 a 28 Julio<br />
-        <input type="checkbox" name="fechas" value="fecha5" />29 Julio a 4
-        Agosto<br />
-        <input type="checkbox" name="fechas" value="fecha6" />5 a 11 Agosto<br />
-        <input type="checkbox" name="fechas" value="fecha7" />12 a 18 Agosto<br />
-        <input type="checkbox" name="fechas" value="fecha8" />19 a 25 Agosto<br />
-      </fieldset>
-      <p>
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Restablecer" />
-      </p>
+      <form>
+        <div class="cont">
+          <fieldset>
+            <legend>Datos personales del niño</legend>
+            <label
+              >Nombre:<br />
+              <input type="text" name="Nombre"/></label
+            ><br />
+            <label
+              >Apellido:<br />
+              <input type="text" name="Apellido"/></label
+            ><br />
+            <label
+              >Fecha de nacimiento:<br />
+              <input type="date" name="Fecha de nacimiento"
+            /></label>
+          </fieldset>
+        </div>
+        <div class="cont">
+          <fieldset>
+            <legend>Información adicional</legend>
+            <label
+              >Correo electrónico:<br />
+              <input type="text" name="email"
+            /></label>
+            <p>Selecciona las fechas de reserva:</p>
+            <input type="checkbox" name="fechas[]" value="fecha1" required />1 a
+            7 Julio<br />
+            <input type="checkbox" name="fechas[]" value="fecha2" required />8 a
+            14 Julio<br />
+            <input type="checkbox" name="fechas[]" value="fecha3" required />15
+            a 21 Julio<br />
+            <input type="checkbox" name="fechas[]" value="fecha4" required />22
+            a 28 Julio<br />
+            <input type="checkbox" name="fechas[]" value="fecha5" required />29
+            Julio a 4 Agosto<br />
+            <input type="checkbox" name="fechas[]" value="fecha6" required />5 a
+            11 Agosto<br />
+            <input type="checkbox" name="fechas[]" value="fecha7" required />12
+            a 18 Agosto<br />
+            <input type="checkbox" name="fechas[]" value="fecha8" required />19
+            a 25 Agosto<br />
+          </fieldset>
+        </div>
+        <div id="send">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Restablecer" />
+        </div>
+      </form>
     </section>
-    <footer >
-        <p id="footer">
-          Campamento Coconut.<br />Calle Princesa,18. 28045 Madrid
-          (Madrid). Teléfono: 91 654 38 16. Fax: 91 654 38 24. Correo
-          electrónico: info@campamentococonut.es
-        </p>
+    <input type="button" onclick="foo()" value="asdf" />
+    <footer>
+      <p id="footer">
+        Campamento Coconut.<br />Calle Princesa,18. 28045 Madrid (Madrid).
+        Teléfono: 91 654 38 16. Fax: 91 654 38 24. Correo electrónico:
+        info@campamentococonut.es
+      </p>
     </footer>
   </body>
 </html>

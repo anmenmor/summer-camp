@@ -2,49 +2,69 @@
 <html lang="es">
   <head>
     <title>Coconut Summer Camp</title>
-    <meta charset="utf-8">
-    <meta name="robots" content="all"/>
-    <meta name="keywords" content="campamento, verano"/>
-    <meta name="description" content="campamento de verano"/>
-    <meta name="revisit-after" content="20 days"/>
-    <meta name="author" content="Andrea Menéndez"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="campamento, verano" />
+    <meta name="description" content="campamento de verano" />
+    <meta name="revisit-after" content="20 days" />
+    <meta name="author" content="Andrea Menéndez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
   </head>
   <body>
     <header>
-      <svg height="130" width="500">
-        <defs>
-          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop
-              offset="0%"
-              style="stop-color:rgba(0, 220, 202, 0.678);stop-opacity:1"
-            />
-            <stop
-              offset="100%"
-              style="stop-color:rgb(0, 110, 15);stop-opacity:1"
-            />
-          </linearGradient>
-        </defs>
-        <ellipse cx="140" cy="70" rx="130" ry="50" fill="url(#grad1)" />
-        <text fill="#ffffff" font-size="20" font-family="Verdana" x="50" y="80">
-          Campamento Coconut
-        </text>
-      </svg>
+      <div class="svg-center">
+        <svg class="foo">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop
+                offset="0%"
+                style="stop-color:rgba(0, 220, 202, 0.678);stop-opacity:1"
+              />
+              <stop
+                offset="100%"
+                style="stop-color:rgb(0, 110, 15);stop-opacity:1"
+              />
+            </linearGradient>
+          </defs>
+          <ellipse cx="140" cy="70" rx="130" ry="50" fill="url(#grad1)" />
+          <text
+            fill="#ffffff"
+            font-size="20"
+            font-family="Verdana"
+            x="50"
+            y="80"
+          >
+            Campamento Coconut
+          </text>
+        </svg>
+      </div>
+      <a href="index-en.html">Inglés</a>
+      <a href="index-es.html">Español</a>
     </header>
     <nav>
-      <ul>
-       <li><a class="menu" href="about-es.html">Sobre nosotros</a></li>
-       <li><a class="menu" href="activities-es.html">Actividades</a></li>
-       <li><a class="menu" href="index-es.html">Inicio</a></li>
-       <li><a class="menu" href="location-es.html">Ubicación e instalaciones</a></li>
-       <li><a class="menu" href="contact-es.html">Contáctanos</a></li>
-    </ul>
+      <ul class="back">
+        <li class="list"><a class="menu" href="index-es.html">Inicio</a></li>
+        <li class="list">
+          <a class="menu" href="about-es.html">Sobre nosotros</a>
+        </li>
+        <li class="list">
+          <a class="menu" href="activities-es.html">Actividades</a>
+        </li>
+        <li class="list">
+          <a class="menu" href="location-es.html">Ubicación</a>
+        </li>
+        <li class="list"><a class="menu" href="prices-es.html">Precio</a></li>
+        <li class="list">
+          <a class="menu" href="contact-es.html">Contáctanos</a>
+        </li>
+      </ul>
     </nav>
     <section>
       <h1>Precio</h1>
       <p>En el precio está incluido:</p>
-      <ol>
+      <ul id="prices">
         <li>Alojamiento y pensión completa</li>
         <li>Monitores 24 horas</li>
         <li>
@@ -53,7 +73,7 @@
         <li>Seguro de accidentes</li>
         <li>Camiseta del campamento</li>
         <li>Diploma</li>
-      </ol>
+      </ul>
       <table>
         <tr>
           <th colspan="2">JULIO</th>
@@ -86,9 +106,9 @@
     </section>
     <footer>
       <p id="footer">
-        Campamento Coconut.<br /><br />Calle Princesa,18. 28045 Madrid
-        (Madrid). Teléfono: 91 654 38 16. Fax: 91 654 38 24. Correo
-        electrónico: info@campamentococonut.es
+        Campamento Coconut.<br /><br />Calle Princesa,18. 28045 Madrid (Madrid).
+        Teléfono: 91 654 38 16. Fax: 91 654 38 24. Correo electrónico:
+        info@campamentococonut.es
       </p>
     </footer>
   </body>
