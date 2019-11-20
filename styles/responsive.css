@@ -8,14 +8,18 @@
     .svg-center {
         width: 100%;
     }
+    .language {
+        width: 100%;
+        text-align: center;
+    }
     img.gim {
         display: block;
         text-align: center;
         width: 80%;
     }  
     .img1 {
-        width: 100%;
-        padding-top: 3%;
+        width: 80%;
+        padding-top: 4%;
         padding-bottom: 8%;
     }
     .img2 {
@@ -49,10 +53,13 @@
         padding-bottom: 10%;
     }
     .beach {
-        display: block;
-        width: 80%;
+        width: 30%;
+        vertical-align: text-top;
     }
-    table {
+    .location {
+        font-size: 18px;
+    }
+    .prices-table {
         border: 1px solid black;
         border-collapse: collapse;
         width: 90%;

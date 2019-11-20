@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <title>Coconut Summer Camp</title>
     <meta charset="utf-8" />
@@ -11,37 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+    <script src="scripts/main.js"></script>
   </head>
-  <body>
+  <body onload="checkboxValidation('en')">
     <header>
+        <div class="language">
+            <a class="lang" href="contact-en.html">English</a>
+            <a class="lang" href="contact-es.html">Español</a>
+          </div>
       <div class="svg-center">
-        <svg class="foo">
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop
-                offset="0%"
-                style="stop-color:rgba(0, 220, 202, 0.678);stop-opacity:1"
-              />
-              <stop
-                offset="100%"
-                style="stop-color:rgb(0, 110, 15);stop-opacity:1"
-              />
-            </linearGradient>
-          </defs>
-          <ellipse cx="140" cy="70" rx="130" ry="50" fill="url(#grad1)" />
-          <text
-            fill="#ffffff"
-            font-size="20"
-            font-family="Verdana"
-            x="50"
-            y="80"
-          >
-            Campamento Coconut
-          </text>
-        </svg>
+        <img src="images/logo.svg" alt="logo" />
       </div>
-      <a href="index-en.html">Inglés</a>
-      <a href="index-es.html">Español</a>
     </header>
     <nav>
       <ul class="back">
@@ -53,7 +33,7 @@
         <li class="list">
           <a class="menu" href="location-en.html">Location</a>
         </li>
-        <li class="list"><a class="menu" href="prices-en.html">Price</a></li>
+        <li class="list"><a class="menu" href="prices-en.html">Prices</a></li>
         <li class="list">
           <a class="menu" href="contact-en.html">Contact us</a>
         </li>
@@ -62,50 +42,55 @@
     <section>
       <h1>Contact with us</h1>
       <p>If you want to register your child, fill out the form below:</p>
-      <p action="" method=""></p>
-      <div class="cont">
-        <fieldset>
-          <legend>Child`s personal information</legend>
-          <label
-            >Name:<br />
-            <input type="text" name="Nombre" required/></label
-          ><br />
-          <label
-            >Surname:<br />
-            <input type="text" name="Apellido" required/></label
-          ><br />
-          <label
-            >Date of birth:<br />
-            <input type="date" name="Fecha de nacimiento" required
-          /></label>
-        </fieldset>
-      </div>
-      <div class="cont">
-        <fieldset>
-          <legend>Aditional information</legend>
-          <label
-            >E-mail:<br />
-            <input type="text" name="email" required
-          /></label>
-          <p>Choose reservation dates:</p>
-          <input type="checkbox" name="fechas" value="fecha1" />1 to 7 July<br />
-          <input type="checkbox" name="fechas" value="fecha2" />8 to 14 July<br />
-          <input type="checkbox" name="fechas" value="fecha3" />15 to 21 July<br />
-          <input type="checkbox" name="fechas" value="fecha4" />22 to 28 July<br />
-          <input type="checkbox" name="fechas" value="fecha5" />29 July to 4
-          August<br />
-          <input type="checkbox" name="fechas" value="fecha6" />5 to 11
-          August<br />
-          <input type="checkbox" name="fechas" value="fecha7" />12 to 18
-          August<br />
-          <input type="checkbox" name="fechas" value="fecha8" />19 to 25
-          August<br />
-        </fieldset>
-      </div>
-      <p id="send">
-        <input class="but" type="submit" value="Send" />
-        <input class="but" type="reset" value="Undo" />
-      </p>
+      <form>
+        <div class="cont">
+          <fieldset>
+            <legend>Child`s personal information</legend>
+            <label
+              >Name:<br />
+              <input type="text" name="Name" required/></label
+            ><br />
+            <label
+              >Surname:<br />
+              <input type="text" name="Surname" required/></label
+            ><br />
+            <label
+              >Date of birth:<br />
+              <input type="date" name="Date of birth" required
+            /></label>
+          </fieldset>
+        </div>
+        <div class="cont">
+          <fieldset>
+            <legend>Aditional information</legend>
+            <label
+              >E-mail:<br />
+              <input type="text" name="email" required
+            /></label>
+            <p>Choose reservation dates:</p>
+            <input type="checkbox" name="dates[]" value="date1" required />1 to
+            7 July<br />
+            <input type="checkbox" name="dates[]" value="date2" required />8 to
+            14 July<br />
+            <input type="checkbox" name="dates[]" value="date3" required />15
+            to 21 July<br />
+            <input type="checkbox" name="dates[]" value="date4" required />22
+            to 28 July<br />
+            <input type="checkbox" name="dates[]" value="date5" required />29
+            July to 4 August<br />
+            <input type="checkbox" name="dates[]" value="date6" required />5 to
+            11 August<br />
+            <input type="checkbox" name="dates[]" value="date7" required />12
+            to 18 August<br />
+            <input type="checkbox" name="dates[]" value="date8" required />19
+            to 25 August<br />
+          </fieldset>
+        </div>
+        <p id="send">
+          <input class="but" type="submit" value="Send" />
+          <input class="but" type="reset" value="Undo" />
+        </p>
+      </form>
     </section>
     <footer>
       <p id="footer">

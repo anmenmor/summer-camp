@@ -6,21 +6,35 @@
     padding: 0;
 }
 body {
-    width: 100%;
+   width: 100%;
 }
 header {
     width: 100%;
     background-color: papayawhip;
-    text-align: center;
 }
 .svg-center {
     text-align: center;
 }
-.foo {
-    width: auto;
+.language {
+    padding: 2%;
+    margin-right: 0;
+    text-align: right;
+    width:  30%;
+}
+.lang {
+    padding: 1%;
+    border: 1px solid black;
+}
+a.lang:link {
+    background-color: #bc8f8f;
+    text-decoration: none;
+}
+a.lang:visited {
+    background-color: #bc8f8f;
+    color: black;
+    text-decoration: none;
 }
 nav {
-    background-color: papayawhip;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     text-align: center;
@@ -69,7 +83,6 @@ h1 {
     font-size: 20px;
     text-align: left;
     width: 100%;
-    height: 5 px;
     padding: 2%;
 }
 h1.camp {
@@ -77,18 +90,21 @@ h1.camp {
     font-size: 20px;
     text-align: center;
     width: 100%;
-    height: 5 px;
     padding-top: 5%;
 }
 .camp1 {
     display: block;
     padding-top: 3%;
     padding-bottom: 4%;
+    width: 40%;
+    height: 30%;
 }
 .camp2 {
     display: block;
     padding-top: 3%;
     padding-bottom: 10%;
+    width: 40%;
+    height: 30%;
 }
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -110,14 +126,27 @@ p {
     padding-bottom: 5%;
     margin: 0;
 }
+.beach {
+    float: left;
+    width: 20%;
+    height: 20%;
+    margin-right: 2%;
+}
+.location {
+    clear: left ;
+}
 .img1 {
     display: block;
     padding-top: 7%;
+    width: 30%;
+    height: 50%;
 }
 .img2 {
     display: block;
     padding-top: 2%;
     padding-bottom: 5%;
+    width: 30%;
+    height: 3%;
 }
 #act {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -150,11 +179,12 @@ img.gim {
 .left {
     padding-left: 5%;
 }
-table {
+.prices-table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 60%;
     text-align: center;
+    width: 60%;
+    height: 60%;
 }
 tr,th,td {
     text-align: center;
@@ -175,15 +205,7 @@ h2 {
     font-size: 18px;
     text-align: left;
     width: 100%;
-    height: 5 px;
     padding: 2%;
-}
-.beach {
-    display: block;
-    text-align: left;
-    margin: 0;
-    padding-top: 2%;
-    padding-bottom: 3%;
 }
 #facilit {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -232,3 +254,4 @@ input:focus {
     padding: 1%;
     border-top: 2px solid black;
 }
+
