@@ -62,15 +62,15 @@ ul {
     padding:1%;
     text-decoration: none;
 }
-a:link {
+.menu:link {
     color: black;
     background-color: yellowgreen;
 }
-a:visited {
+.menu:visited {
     color: blueviolet;
     background-color: yellowgreen;
 }
-a:hover {
+.menu:hover {
     color: blue;
     background-color: yellowgreen;
 }
@@ -138,15 +138,9 @@ p {
 .img1 {
     display: block;
     padding-top: 7%;
-    width: 30%;
+    padding-bottom: 7%;
+    width: 40%;
     height: 50%;
-}
-.img2 {
-    display: block;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    width: 30%;
-    height: 3%;
 }
 #act {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -168,11 +162,16 @@ p {
     padding-left: 2%;
     margin: 0;
 }
-img.gim {
+.gim {
     display: inline;
     padding-top: 5%;
     padding-bottom: 7%;
 }  
+.gim1 {
+    display: inline;
+    padding-top: 5%;
+    padding-bottom: 7%;
+} 
 .center {
     text-align: center;
 }
@@ -190,7 +189,11 @@ tr,th,td {
     text-align: center;
     padding: 2%;
 }
-a.none:link {
+.none:link {
+    color: black;
+    background-color: burlywood;
+}
+.none:visited {
     color: black;
     background-color: burlywood;
 }

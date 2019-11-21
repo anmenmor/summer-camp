@@ -8,22 +8,34 @@
     .svg-center {
         width: 100%;
     }
+    h1, h1.camp {
+       font-size: 22px; 
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p, #bottom, #act, #prices, #facilit, .but, nav {
+        font-size: 17px;
+    }
+    #footer {
+        font-size: 12px;
+    }
     .language {
         width: 100%;
         text-align: center;
     }
-    img.gim {
+    .gim {
         display: block;
         text-align: center;
-        width: 80%;
+        width: 70%;
     }  
+    .gim1 {
+        display: none;
+    }
     .img1 {
-        width: 80%;
+        width: 70%;
         padding-top: 4%;
         padding-bottom: 8%;
-    }
-    .img2 {
-        display: none;
     }
     .cont{
         width: 100%;
@@ -53,11 +65,11 @@
         padding-bottom: 10%;
     }
     .beach {
-        width: 30%;
-        vertical-align: text-top;
-    }
-    .location {
-        font-size: 18px;
+        width: 80%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 5%;
+        display: block;
     }
     .prices-table {
         border: 1px solid black;
